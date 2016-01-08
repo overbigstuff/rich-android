@@ -13,7 +13,6 @@ import android.widget.TextView;
 
 import com.overbigstuff.richandroid.R;
 import com.overbigstuff.richandroid.activity.RichActivity;
-import com.overbigstuff.richandroid.utils.L;
 
 import butterknife.ButterKnife;
 
@@ -38,7 +37,6 @@ public abstract class RichFragment extends Fragment {
             mView.setClickable(true);
             ButterKnife.unbind(this);
             ButterKnife.bind(this, mView);
-            L.e("onCreateView");
         }
         return mView;
     }
